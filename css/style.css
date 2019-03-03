@@ -1,0 +1,120 @@
+body{
+	font-family: mis-font, verdana;
+}
+
+section{ 
+	height: 100vh; 
+}
+
+.bg-dark{
+	background-color: #63303A!important;
+}
+
+h2{
+	margin:0px;
+}
+
+mark{
+	background-color: #FBF8F8;
+	color: #63303A;
+}
+
+.zoom-img {
+    transition: transform .2s!important; /* Animation */
+}
+
+.zoom-img:hover {
+  -webkit-transform: scale(1.2)!important;
+  transform: scale(1.2)!important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+}
+
+.center-banner{
+	margin: 50px;
+}
+
+.parallax {
+    background-image: url("asset/cover.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#about{
+	background: white;
+}
+
+#team{
+	background: #00A7D3!important;
+}
+
+#ourwork{
+	height: 100%;
+	background: #6EBF62!important;
+}
+
+#technologies{
+	height: 100%!important;
+}
+
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .center-banner{
+    	max-height: 110px;
+    	width: auto;
+    }
+    section{ 
+    	min-height: 100vh;
+		height: 100%; 
+	}
+
+	#technologies{
+		min-height: 100%!important;
+	}
+
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
